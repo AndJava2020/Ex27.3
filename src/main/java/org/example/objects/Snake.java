@@ -79,6 +79,14 @@ public class Snake {
         parts.add(0,head);
         tail=parts.get(parts.size()-1);
 
+
+    }
+    public void edge(double canvasx, double canvasy){
+        if(head.getX()>canvasx)head.setX(0);
+        if(head.getX()<0)head.setX(canvasx);
+        if(head.getY()<0)head.setY(canvasy);
+        if(head.getY()>canvasy)head.setY(0);
+
     }
     private void addPart(){
             partOfBody temp=new partOfBody(tail.getX()+width,tail.getY());
@@ -115,5 +123,6 @@ public class Snake {
         }
         return  false;
     }
+
 
 }

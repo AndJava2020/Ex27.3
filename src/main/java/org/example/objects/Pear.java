@@ -8,7 +8,7 @@ import java.util.Random;
 public class Pear extends Rectangle{
     private Rectangle pear;
     public Pear(){
-        super(new Random().nextInt(200),new Random().nextInt(200),10,10);
+        super(new Random().nextInt(290),new Random().nextInt(290),10,10);//размеры canvas
     }
 
     public void draw(GraphicsContext g){
